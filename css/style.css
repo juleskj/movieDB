@@ -1,0 +1,135 @@
+@import url(grid-layout.css);
+@import url(variables.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: var(--white);
+    font-family: system-ui;
+
+    > header{
+        color: var(--white);
+        background-color: var(--darkPurple);
+        padding: 1rem 0.5rem;
+    }
+    > footer{
+        background-color: var(--darkPurple);
+        color: var(--white);
+        padding: 0.5rem 0.2rem;
+        width: 100%;
+        text-align: center;
+
+        position: fixed;
+        bottom: 0; 
+    }
+}
+
+
+
+
+#movie-list li{
+    list-style-type: none;
+    
+    border-radius: 0.5rem;
+    border: solid 1px  var(--purple);
+    overflow: hidden;
+    margin: 1rem 0;
+        
+    & header{
+        background-color: var(--purple);
+        color: var(--white);
+        padding: .5rem 1rem;
+    }
+}
+
+
+li section div{
+    display: flex;
+    flex-flow: row wrap;
+   
+    
+    > article{
+        flex: 1 1 400px;
+        display: inherit;
+        flex-flow: column;
+        gap: 0.2rem;
+        padding: 0.5rem;
+        
+    }
+
+    & p{
+        max-width: 65ch;
+    }
+       
+}
+
+li section img{
+    height: auto;
+    width: 50%;
+    margin:.5rem auto 0 auto;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 60/100;
+    border-radius: 0.5rem;
+   
+    
+}
+
+@media (min-width: 758px){
+    img{
+        max-width: 150px;
+        width: 100%;
+        margin:0 !important;
+        border-radius: 0 !important;
+    }
+}
+
+
+#menu-filter{
+    background-color: var(--red);
+    padding: .5rem 1rem;
+    position: sticky;
+    top: 0;
+}
+
+#menu-filter ul{
+    
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+#menu-filter li{
+    list-style-type: none;
+        
+    & a{
+        text-decoration: none;
+        color: var(--white);
+        
+        
+        &:hover {
+           
+            color: var(--beige);
+            text-decoration: underline;
+        }
+       
+    }
+}
+
+.active{
+    color: var(--beige) !important;
+    text-decoration: underline !important;
+}
+
+
+
+
+
+

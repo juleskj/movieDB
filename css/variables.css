@@ -1,0 +1,11 @@
+:root{
+
+    --maxWidth: 1024px;
+    --darkPurple:#331124 ;
+    --purple: #60083F;
+    --red:#9C0020 ;
+    --beige: #E5E5D0;
+
+    --white: rgb(245, 239, 239);
+    --black: rgb(10, 10, 10);
+}

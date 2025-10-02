@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Movie DB</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>The Movie Datebase</h1>
+    </header>
+    <nav id="menu-filter" class="full-bleed">
+        <ul>
+            <li><a class="active" href="#" data-value="now_playing">Now Playing</a></li>
+            <li><a href="#" data-value="popular">Poplar</a></li>
+            <li><a href="#" data-value="top_rated">Top Rated</a></li>
+            <li><a href="#" data-value="upcoming">Upcoming</a></li>
+        </ul>
+    </nav>
+    <main>
+        <ul id="movie-list">
+
+        </ul>
+    </main>
+    <footer>
+        <p>Made by Jules</p>
+    </footer>
+
+
+</body>
+<template>
+    <li>
+        <section>
+            <header>
+                <h3>movie title</h3>
+            </header>
+            <div>
+                <img id="poster" src="https://placehold.co/600x400" alt="" draggable="false">
+                <article id="class-text">
+                    <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum atque aliquam dolorem.
+                        Quibusdam delectus nemo itaque harum possimus reiciendis iusto cumque! Ipsum totam id
+                        harum quis dignissimos dicta eum et.
+                    </p>
+                    <p>
+                        <strong>Original Title: </strong><span id="OG-title">original title</span>
+                    </p>
+                    <p>
+                        <strong>Release date: </strong><span id="rel-date">date</span>
+                    </p>
+                </article>
+            </div>
+
+        </section>
+    </li>
+
+
+</template>
+
+</html>

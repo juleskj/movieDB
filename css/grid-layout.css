@@ -1,0 +1,37 @@
+@import url(variables.css);
+
+
+/* grid for body, header, footer and main */
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns:
+    
+    [full-start] 1fr [content] minmax(0, var(--maxWidth)) 1fr [full-end];
+  
+}
+
+header:has(h1),main{
+  grid-column:full;
+  display:grid;
+  grid-template-columns:subgrid;
+  
+  > *{
+    grid-column:content;
+  }
+
+}
+
+.full-bleed{
+   grid-column:full;
+  display:grid;
+  grid-template-columns:subgrid;
+  
+  > *{
+    grid-column:content;
+  }
+
+}
+
+
+
