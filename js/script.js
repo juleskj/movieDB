@@ -9,13 +9,8 @@ const options = {
     Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhMDUxZTc1MGRiMzJmNjRmMjdjOGIzMTc1YWE4OGRlZCIsIm5iZiI6MTc1ODg4MDM0NC4zODgsInN1YiI6IjY4ZDY2MjU4YjkxZDljN2Q3M2M4MzVjMyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tbzi_KxKTOHpu5kImvIwHQ7hwoVo4tXkmmOFXGXlB-0'
   }
 };
-
-
-window.addEventListener("load", () =>{
  
-  fetchApi();
-
-})
+fetchApi();
 
 function fetchApi(endPoint){
   fetch(`${BASE_URL}/${endPoint??"now_playing"}`, options)
